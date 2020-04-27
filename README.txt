@@ -64,7 +64,7 @@ Dans le dossier website:
 Finalement quelques petites explications seront aussi dites dans la video.
 
 
-
+Le fichier sera aussi exporter vers GitHub.
 
 
 Merci.
