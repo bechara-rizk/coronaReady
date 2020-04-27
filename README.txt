@@ -1,4 +1,4 @@
-Comme l'explication des fichiers HTML et CSS allait etre trop repetitive (ils sont des langage de codage et pas de programmation comme python et javascript) on
+Comme l'explication des fichiers HTML et CSS allait etre trop repetitive (ils sont des langages de codage et pas de programmation comme python et javascript) on
   va expliquer les notions a comprendre dans ce fichier tout en expliquant lea lien des autres fichiers entre eux.
 
 Le fichier README.txt contient ces explications.
