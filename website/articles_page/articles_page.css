@@ -1,0 +1,36 @@
+.article_quote{
+  background-color: #cfcfcf;
+  width: 680px;
+  height: 147px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-top: 0px;
+  float: left;
+  border-radius: 12px;
+  transition-duration: 0.3s;
+}
+
+.article_quote:hover{
+  background-color: #afafaf;
+}
+
+.article_pic{
+  width: 147px;
+  height: 147px;
+  float: left;
+}
+
+.article_title{
+  margin: 2px;
+  margin-left: 160px;
+  color: #000000;
+  font-size: 25px;
+}
+
+.article_text{
+  margin: 0px;
+  margin-left: 160px;
+  color: #000000;
+  font-size: 17px;
+}

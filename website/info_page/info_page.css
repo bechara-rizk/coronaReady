@@ -1,0 +1,22 @@
+.corona_info{
+  background-color: #cfcfcf;
+  width: 680px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-top: 0px;
+  float: left;
+  border-radius: 12px;
+}
+
+.info_title{
+  color: #000000;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.info_text{
+  color: #000000;
+  font-size: 20px;
+  margin: 10px;
+}
