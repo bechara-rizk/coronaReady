@@ -15,7 +15,7 @@ const scoreDiv = document.getElementById("scoreContainer");
 let questions = [
   {
     question : "How can you contract the COVID-19? ",
-    imgSrc : "/Users/bechara/Desktop/github/coronaReady/python_program/images/corona_logo.png",
+    imgSrc : "python_program/images/corona_logo.png",
     choiceA : "Through animals",
     choiceB : "Through droplets of saliva or discharge from the nose",
     choiceC : "Through heated food",
@@ -23,7 +23,7 @@ let questions = [
   },
   {
     question : "Why is it important to wash your hands as much as you can?",
-    imgSrc : "/Users/bechara/Desktop/github/coronaReady/python_program/images/corona_logo.png",
+    imgSrc : "python_program/images/corona_logo.png",
     choiceA : "To make them look nice and elegant",
     choiceB : "To waste water",
     choiceC : "To eliminate all the traces of viruses on your hands",
@@ -31,7 +31,7 @@ let questions = [
   },
   {
     question : "Why should you keep your hands away from your face?",
-    imgSrc : "/Users/bechara/Desktop/github/coronaReady/python_program/images/corona_logo.png",
+    imgSrc : "python_program/images/corona_logo.png",
     choiceA : "To keep your face beautiful",
     choiceB : "Germs can take up residence in your mucous membranes",
     choiceC : "To avoid scratching your spots",
@@ -39,7 +39,7 @@ let questions = [
   },
   {
     question : "When should you wear a mask?",
-    imgSrc : "/Users/bechara/Desktop/github/coronaReady/python_program/images/corona_logo.png",
+    imgSrc : "python_program/images/corona_logo.png",
     choiceA : "All the time",
     choiceB : "When at home",
     choiceC : "When close to people",
@@ -47,7 +47,7 @@ let questions = [
   },
   {
     question : "What are the most common symptoms caused by COVID-19? ",
-    imgSrc : "/Users/bechara/Desktop/github/coronaReady/python_program/images/corona_logo.png",
+    imgSrc : "python_program/images/corona_logo.png",
     choiceA : "Cough, fever, tiredness",
     choiceB : "Loss of weight, pain in the back and vomiting",
     choiceC : "Loss of appetite and difficulty breathing",
@@ -55,7 +55,7 @@ let questions = [
   },
   {
     question : "Why is it important to practice confinement and self-isolation? ",
-    imgSrc : "/Users/bechara/Desktop/github/coronaReady/python_program/images/corona_logo.png",
+    imgSrc : "python_program/images/corona_logo.png",
     choiceA : "Stay home to save others because the incubation period is 0 to 14 days",
     choiceB : "Stay home in order not to go to school",
     choiceC : "Stay home to watch TV",
@@ -154,11 +154,11 @@ function scoreRender(){
     scoreDiv.style.display = "block";  //on montre le conteneur du score
     const scorePerCent = Math.round(100 * score/questions.length);  //on definit une variable qui contiendra le pourcentage de reponse justes arrondie a l'entier
     //on definit une variable qui par rapport au pourcentage obtenu va montrer une image differente a la fin du quiz
-    let img = (scorePerCent >= 80) ? "/Users/bechara/Desktop/github/coronaReady/python_program/images/result_img_5.png" :
-              (scorePerCent >= 60) ? "/Users/bechara/Desktop/github/coronaReady/python_program/images/result_img_4.png" :
-              (scorePerCent >= 40) ? "/Users/bechara/Desktop/github/coronaReady/python_program/images/result_img_3.png" :
-              (scorePerCent >= 20) ? "/Users/bechara/Desktop/github/coronaReady/python_program/images/result_img_2.png" :
-              "/Users/bechara/Desktop/github/coronaReady/python_program/images/result_img_1.png";
+    let img = (scorePerCent >= 80) ? "python_program/images/result_img_5.png" :
+              (scorePerCent >= 60) ? "python_program/images/result_img_4.png" :
+              (scorePerCent >= 40) ? "python_program/images/result_img_3.png" :
+              (scorePerCent >= 20) ? "python_program/images/result_img_2.png" :
+              "python_program/images/result_img_1.png";
     scoreDiv.innerHTML = "<img src="+ img +">";  //on accede au code html pour ajouter l'image correspondante au score
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";  //et on ajoute le pourcentage en dessous de l'image
 }
