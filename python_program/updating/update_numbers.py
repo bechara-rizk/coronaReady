@@ -120,166 +120,169 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
 
         #on definit une variable qui contient le code HTML avec les nouvelles valeurs entrees par l'utilisateur
         self.html_stat_code=f"""
-        <!DOCTYPE html>
+<!DOCTYPE html>
 
-        <html lang="en" dir="ltr">
-          <head>
-            <title>coronaReady - Statistics</title>
-            <meta name="keywords" content="coronaReady, coronavirus, corona, COVID19, COVID-19">
-            <meta name="description" content="A page about the coronavirus">
-            <meta name="author" content="coronaReady">
-            <meta charset="utf-8">
-            <link rel="stylesheet" href="/Users/bechara/Desktop/github/coronaReady/website/universal_css.css">
-            <link rel="stylesheet" href="/Users/bechara/Desktop/github/coronaReady/website/stats_page/stats_page.css">
-          </head>
-          <body>
-            <div class="header">
-              <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/corona_banner_720.png", alt="coronaReady logo">
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/home_page/index.html"><button class="head_buttons", title="Go to Home page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/home_bttn.png", alt="Home button"></button></a>
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/info_page/info_page.html"><button class="head_buttons", title="Go to Informations page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/info_bttn.png", alt="Info button"></button></a>
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/articles_page/articles_page.html"><button class="head_buttons", title="Go to Articles page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/articles_bttn.png", alt="Articles button"></button></a>
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/stats_page/stats_page.html"><button class="head_buttons head_buttons_active", title="Go to Statistics page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/stats_bttn.png", alt="Statistics button"></button></a>
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/tips_page/tips_page.html"><button class="head_buttons", title="Go to Tips page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/tips_bttn.png", alt="Tips button"></button></a>
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/sum_page/sum_page.html"><button class="head_buttons", title="Go to Daily Summary page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/sum_bttn.png", alt="Dailt Summary button"></button></a>
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/quiz_page/quiz_page.html"><button class="head_buttons", title="Go to Quiz page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/quiz_bttn.png", alt="Quiz button"></button></a>
-            </div>
-            <h1 class="page_title">COVID-19 Statistics</h1>
-            <a href="https://www.worldometers.info/coronavirus/", target="_blank">
-              <div class="cases source">
-                <h1>World-wide cases</h1>
-                <p>Total: {self.world_total}</p>
-                <p>Active: {self.world_active}</p>
-                <p>Recovered: {self.world_reco}</p>
-                <p>Deaths: {self.world_deaths}</p>
-              </div>
-            </a>
-            <div class="cases">
-              <h1>Lebanese cases</h1>
-              <p>Total: {self.lebanon_total}</p>
-              <p>Active: {self.lebanon_active}</p>
-              <p>Recovered: {self.lebanon_reco}</p>
-              <p>Deaths: {self.lebanon_deaths}</p>
-              <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/data_corona_plot_lebanon.png", alt="line plot">
-            </div>
-            <div class="cases">
-              <h1>Iranian cases</h1>
-              <p>Total: {self.iran_total}</p>
-              <p>Active: {self.iran_active}</p>
-              <p>Recovered: {self.iran_reco}</p>
-              <p>Deaths: {self.iran_deaths}</p>
-              <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/data_corona_plot_iran.png", alt="line plot">
-            </div>
-            <div class="cases">
-              <h1>Japanese cases</h1>
-              <p>Total: {self.japan_total}</p>
-              <p>Active: {self.japan_active}</p>
-              <p>Recovered: {self.japan_reco}</p>
-              <p>Deaths: {self.japan_deaths}</p>
-              <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/data_corona_plot_japan.png", alt="line plot">
-            </div>
-            <div class="updt">
-              <p>Last update: {self.update_date}</p>
-            </div>
-          </body>
-        </html>
-        """
+<html lang="en" dir="ltr">
+  <head>
+    <title>coronaReady - Statistics</title>
+    <meta name="keywords" content="coronaReady, coronavirus, corona, COVID19, COVID-19">
+    <meta name="description" content="A page about the coronavirus">
+    <meta name="author" content="coronaReady">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="website/universal_css.css">
+    <link rel="stylesheet" href="website/stats_page/stats_page.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/bechara-rizk/coronaReady/master/python_program/images/corona_logo.png">
+  </head>
+  <body>
+    <div class="header">
+      <img src="https://raw.githubusercontent.com/bechara-rizk/coronaReady/master/python_program/images/corona_banner_720.png", alt="coronaReady logo">
+      <a href="index.html"><button class="head_buttons", title="Go to Home page"><img src="python_program/images/home_bttn.png", alt="Home button"></button></a>
+      <a href="info_page.html"><button class="head_buttons", title="Go to Informations page"><img src="python_program/images/info_bttn.png", alt="Info button"></button></a>
+      <a href="articles_page.html"><button class="head_buttons", title="Go to Articles page"><img src="python_program/images/articles_bttn.png", alt="Articles button"></button></a>
+      <a href="stats_page.html"><button class="head_buttons head_buttons_active", title="Go to Statistics page"><img src="python_program/images/stats_bttn.png", alt="Statistics button"></button></a>
+      <a href="tips_page.html"><button class="head_buttons", title="Go to Tips page"><img src="python_program/images/tips_bttn.png", alt="Tips button"></button></a>
+      <a href="sum_page.html"><button class="head_buttons", title="Go to Daily Summary page"><img src="python_program/images/sum_bttn.png", alt="Dailt Summary button"></button></a>
+      <a href="quiz_page.html"><button class="head_buttons", title="Go to Quiz page"><img src="python_program/images/quiz_bttn.png", alt="Quiz button"></button></a>
+    </div>
+    <h1 class="page_title">COVID-19 Statistics</h1>
+    <a href="https://www.worldometers.info/coronavirus/", target="_blank">
+      <div class="cases source">
+        <h1>World-wide cases</h1>
+        <p>Total: {self.world_total}</p>
+        <p>Active: {self.world_active}</p>
+        <p>Recovered: {self.world_reco}</p>
+        <p>Deaths: {self.world_active}</p>
+      </div>
+    </a>
+    <div class="cases">
+      <h1>Lebanese cases</h1>
+      <p>Total: {self.lebanon_total}</p>
+      <p>Active: {self.lebanon_active}</p>
+      <p>Recovered: {self.lebanon_reco}</p>
+      <p>Deaths: {self.lebanon_active}</p>
+      <img src="python_program/images/data_corona_plot_Lebanon.png", alt="line plot">
+    </div>
+    <div class="cases">
+      <h1>Iranian cases</h1>
+      <p>Total: {self.iran_total}</p>
+      <p>Active: {self.iran_active}</p>
+      <p>Recovered: {self.iran_reco}</p>
+      <p>Deaths: {self.iran_active}</p>
+      <img src="python_program/images/data_corona_plot_Iran.png", alt="line plot">
+    </div>
+    <div class="cases">
+      <h1>Japanese cases</h1>
+      <p>Total: {self.japan_total}</p>
+      <p>Active: {self.japan_active}</p>
+      <p>Recovered: {self.japan_reco}</p>
+      <p>Deaths: {self.japan_active}</p>
+      <img src="python_program/images/data_corona_plot_Japan.png", alt="line plot">
+    </div>
+    <div class="updt">
+      <p>Last update: {self.update_date}</p>
+    </div>
+  </body>
+</html>
+"""
         #on definit une variable qui contient le code HTML avec les nouvelles valeurs entrees par l'utilisateur
         self.html_home_code=f"""
-        <!DOCTYPE html>
+<!DOCTYPE html>
 
-        <html lang="en" dir="ltr">
-          <head>
-            <title>coronaReady - Home</title>
-            <meta name="keywords" content="coronaReady, coronavirus, corona, COVID19, COVID-19">
-            <meta name="description" content="A page about the coronavirus">
-            <meta name="author" content="coronaReady">
-            <meta charset="utf-8">
-            <link rel="stylesheet" href="/Users/bechara/Desktop/github/coronaReady/website/universal_css.css">
-            <link rel="stylesheet" href="/Users/bechara/Desktop/github/coronaReady/website/home_page/home_page.css">
-          </head>
-          <body>
-            <div class="header">
-              <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/corona_banner_720.png", alt="coronaReady logo">
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/home_page/index.html"><button class="head_buttons head_buttons_active", title="Go to Home page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/home_bttn.png", alt="Home button"></button></a>
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/info_page/info_page.html"><button class="head_buttons", title="Go to Informations page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/info_bttn.png", alt="Info button"></button></a>
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/articles_page/articles_page.html"><button class="head_buttons", title="Go to Articles page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/articles_bttn.png", alt="Articles button"></button></a>
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/stats_page/stats_page.html"><button class="head_buttons", title="Go to Statistics page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/stats_bttn.png", alt="Statistics button"></button></a>
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/tips_page/tips_page.html"><button class="head_buttons", title="Go to Tips page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/tips_bttn.png", alt="Tips button"></button></a>
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/sum_page/sum_page.html"><button class="head_buttons", title="Go to Daily Summary page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/sum_bttn.png", alt="Dailt Summary button"></button></a>
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/quiz_page/quiz_page.html"><button class="head_buttons", title="Go to Quiz page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/quiz_bttn.png", alt="Quiz button"></button></a>
-            </div>
-            <h1 class="page_title">Home</h1>
-            <a href="/Users/bechara/Desktop/github/coronaReady/website/info_page/info_page.html">
-              <div class="info_preview">
-                <h1 class="info_title">Virus Information</h1>
-                <p class="info_text">
-                  People may experience
-                  <ul class="info_list">
-                    <li>Cough</li>
-                    <li>Fever</li>
-                    <li>Tiredness</li>
-                    <li>Difficulty breathing (severe cases)</li>
-                    <li>Very occasionally, loss of appetite</li>
-                  </ul>
-                </p>
-              </div>
-            </a>
-            <a href="/Users/bechara/Desktop/github/coronaReady/website/stats_page/stats_page.html">
-              <div class="info_preview">
-                <h1 class="info_title">Statistics</h1>
-                <div class="stats_div">
-                  <h3 class="stats_title">World-wide cases</h1>
-                  <p class="stats_numbers">Total: {self.world_total}</p>
-                  <p class="stats_numbers">Active: {self.world_active}</p>
-                  <p class="stats_numbers">Recovered: {self.world_reco}</p>
-                  <p class="stats_numbers">Deaths: {self.world_deaths}</p>
-                </div>
-                <div class="stats_div">
-                  <h3 class="stats_title">Lebanese cases</h1>
-                  <p class="stats_numbers">Total: {self.lebanon_total}</p>
-                  <p class="stats_numbers">Active: {self.lebanon_active}</p>
-                  <p class="stats_numbers">Recovered: {self.lebanon_reco}</p>
-                  <p class="stats_numbers">Deaths: {self.lebanon_deaths}</p>
-                </div>
-              </div>
-            </a>
-            <a href="/Users/bechara/Desktop/github/coronaReady/website/articles_page/articles_page.html">
-              <div class="info_preview">
-                <h1 class="info_title">Articles</h1>
-                <article class="article_quote">
-                  <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/web_seek_pic.jpeg", alt="article picture", class="article_pic">
-                  <h1 class="article_title">Speakup Covid</h1>
-                  <p class="article_text">"With reference to the ethical code of psychologists, this professional and experienced team will be offering psychological support to the frontline Health Caregivers dealing with the outbreak of Novel Coronavirus (COVID-19)."</p>
-                </article>
-                <article class="article_quote">
-                  <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/web_thae-pic.jpg", alt="article picture", class="article_pic">
-                  <h1 class="article_title">How The Pandemic Will End ~ The Atlantic</h1>
-                  <p class="article_text">"Three months ago, no one knew that SARS-CoV-2 existed. Now the virus has spread to almost every country, infecting at least 446,000 people whom we know about, and many more whom we do not."</p>
-                </article>
-              </div>
-            </a>
-            <a href="/Users/bechara/Desktop/github/coronaReady/website/tips_page/tips_page.html">
-              <div class="info_preview">
-                <h1 class="info_title">Tips</h1>
-                <p class="info_text"><ul class="info_list">
-                  <li>Stay Home</li>
-                  <li>Wash Your Hands</li>
-                  <li>Practice Social Distancing</li>
-                  <li>Rest</li>
-                  <li>Keep Warm</li>
-                </ul></p>
-              </div>
-            </a>
-          </body>
-        </html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>coronaReady - Home</title>
+    <meta name="keywords" content="coronaReady, coronavirus, corona, COVID19, COVID-19">
+    <meta name="description" content="A page about the coronavirus">
+    <meta name="author" content="coronaReady">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="website/universal_css.css">
+    <link rel="stylesheet" href="website/home_page/home_page.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/bechara-rizk/coronaReady/master/python_program/images/corona_logo.png">
+  </head>
+  <body>
+    <div class="header">
+      <img src="https://raw.githubusercontent.com/bechara-rizk/coronaReady/master/python_program/images/corona_banner_720.png", alt="coronaReady logo">
+      <a href="index.html"><button class="head_buttons head_buttons_active", title="Go to Home page"><img src="python_program/images/home_bttn.png", alt="Home button"></button></a>
+      <a href="info_page.html"><button class="head_buttons", title="Go to Informations page"><img src="python_program/images/info_bttn.png", alt="Info button"></button></a>
+      <a href="articles_page.html"><button class="head_buttons", title="Go to Articles page"><img src="python_program/images/articles_bttn.png", alt="Articles button"></button></a>
+      <a href="stats_page.html"><button class="head_buttons", title="Go to Statistics page"><img src="python_program/images/stats_bttn.png", alt="Statistics button"></button></a>
+      <a href="tips_page.html"><button class="head_buttons", title="Go to Tips page"><img src="python_program/images/tips_bttn.png", alt="Tips button"></button></a>
+      <a href="sum_page.html"><button class="head_buttons", title="Go to Daily Summary page"><img src="python_program/images/sum_bttn.png", alt="Dailt Summary button"></button></a>
+      <a href="quiz_page.html"><button class="head_buttons", title="Go to Quiz page"><img src="python_program/images/quiz_bttn.png", alt="Quiz button"></button></a>
+    </div>
+    <h1 class="page_title">Home</h1>
+    <a href="info_page.html">
+      <div class="info_preview">
+        <h1 class="info_title">Virus Information</h1>
+        <p class="info_text">
+          People may experience
+          <ul class="info_list">
+            <li>Cough</li>
+            <li>Fever</li>
+            <li>Tiredness</li>
+            <li>Difficulty breathing (severe cases)</li>
+            <li>Very occasionally, loss of appetite</li>
+          </ul>
+        </p>
+      </div>
+    </a>
+    <a href="stats_page.html">
+      <div class="info_preview">
+        <h1 class="info_title">Statistics</h1>
+        <div class="stats_div">
+          <h3 class="stats_title">World-wide cases</h1>
+          <p class="stats_numbers">Total: {self.world_total}</p>
+          <p class="stats_numbers">Active: {self.world_active}</p>
+          <p class="stats_numbers">Recovered: {self.world_reco}</p>
+          <p class="stats_numbers">Deaths: {self.world_deaths}</p>
+        </div>
+        <div class="stats_div">
+          <h3 class="stats_title">Lebanese cases</h1>
+          <p class="stats_numbers">Total: {self.lebanon_total}</p>
+          <p class="stats_numbers">Active: {self.lebanon_active}</p>
+          <p class="stats_numbers">Recovered: {self.lebanon_reco}</p>
+          <p class="stats_numbers">Deaths: {self.lebanon_deaths}</p>
+        </div>
+      </div>
+    </a>
+    <a href="articles_page.html">
+      <div class="info_preview">
+        <h1 class="info_title">Articles</h1>
+        <article class="article_quote">
+          <img src="python_program/images/web_seek_pic.jpeg", alt="article picture", class="article_pic">
+          <h1 class="article_title">Speakup Covid</h1>
+          <p class="article_text">"With reference to the ethical code of psychologists, this professional and experienced team will be offering psychological support to the frontline Health Caregivers dealing with the outbreak of Novel Coronavirus (COVID-19)."</p>
+        </article>
+        <article class="article_quote">
+          <img src="python_program/images/web_thae-pic.jpg", alt="article picture", class="article_pic">
+          <h1 class="article_title">How The Pandemic Will End ~ The Atlantic</h1>
+          <p class="article_text">"Three months ago, no one knew that SARS-CoV-2 existed. Now the virus has spread to almost every country, infecting at least 446,000 people whom we know about, and many more whom we do not."</p>
+        </article>
+      </div>
+    </a>
+    <a href="tips_page.html">
+      <div class="info_preview">
+        <h1 class="info_title">Tips</h1>
+        <p class="info_text"><ul class="info_list">
+          <li>Stay Home</li>
+          <li>Wash Your Hands</li>
+          <li>Practice Social Distancing</li>
+          <li>Rest</li>
+          <li>Keep Warm</li>
+        </ul></p>
+      </div>
+    </a>
+  </body>
+</html>
+
         """
 
         #on ouvre le fichier HTML, on ecrit le nouveau code avec les nouvelles valeurs et puis on le ferme
-        self.stat_code=open("/Users/bechara/Desktop/github/coronaReady/website/stats_page/stats_page.html", "w")
+        self.stat_code=open("/Users/bechara/Desktop/github/coronaReady/stats_page.html", "w")
         self.stat_code.write(self.html_stat_code)
         self.stat_code.close()
         #on ouvre le fichier HTML, on ecrit le nouveau code avec les nouvelles valeurs et puis on le ferme
-        self.home_code=open("/Users/bechara/Desktop/github/coronaReady/website/home_page/index.html","w")
+        self.home_code=open("/Users/bechara/Desktop/github/coronaReady/index.html","w")
         self.home_code.write(self.html_home_code)
         self.home_code.close()
         self.after(4000, self.destroy)  #apres 4 secondes que toutes les actions soient finies la fenetre va se fermer automatiquement
