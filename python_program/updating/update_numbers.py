@@ -135,7 +135,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
           <body>
             <div class="header">
               <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/corona_banner_720.png", alt="coronaReady logo">
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/home_page/home_page.html"><button class="head_buttons", title="Go to Home page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/home_bttn.png", alt="Home button"></button></a>
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/home_page/index.html"><button class="head_buttons", title="Go to Home page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/home_bttn.png", alt="Home button"></button></a>
               <a href="/Users/bechara/Desktop/github/coronaReady/website/info_page/info_page.html"><button class="head_buttons", title="Go to Informations page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/info_bttn.png", alt="Info button"></button></a>
               <a href="/Users/bechara/Desktop/github/coronaReady/website/articles_page/articles_page.html"><button class="head_buttons", title="Go to Articles page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/articles_bttn.png", alt="Articles button"></button></a>
               <a href="/Users/bechara/Desktop/github/coronaReady/website/stats_page/stats_page.html"><button class="head_buttons head_buttons_active", title="Go to Statistics page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/stats_bttn.png", alt="Statistics button"></button></a>
@@ -200,7 +200,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
           <body>
             <div class="header">
               <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/corona_banner_720.png", alt="coronaReady logo">
-              <a href="/Users/bechara/Desktop/github/coronaReady/website/home_page/home_page.html"><button class="head_buttons head_buttons_active", title="Go to Home page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/home_bttn.png", alt="Home button"></button></a>
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/home_page/index.html"><button class="head_buttons head_buttons_active", title="Go to Home page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/home_bttn.png", alt="Home button"></button></a>
               <a href="/Users/bechara/Desktop/github/coronaReady/website/info_page/info_page.html"><button class="head_buttons", title="Go to Informations page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/info_bttn.png", alt="Info button"></button></a>
               <a href="/Users/bechara/Desktop/github/coronaReady/website/articles_page/articles_page.html"><button class="head_buttons", title="Go to Articles page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/articles_bttn.png", alt="Articles button"></button></a>
               <a href="/Users/bechara/Desktop/github/coronaReady/website/stats_page/stats_page.html"><button class="head_buttons", title="Go to Statistics page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/stats_bttn.png", alt="Statistics button"></button></a>
@@ -279,7 +279,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
         self.stat_code.write(self.html_stat_code)
         self.stat_code.close()
         #on ouvre le fichier HTML, on ecrit le nouveau code avec les nouvelles valeurs et puis on le ferme
-        self.home_code=open("/Users/bechara/Desktop/github/coronaReady/website/home_page/home_page.html","w")
+        self.home_code=open("/Users/bechara/Desktop/github/coronaReady/website/home_page/index.html","w")
         self.home_code.write(self.html_home_code)
         self.home_code.close()
         self.after(4000, self.destroy)  #apres 4 secondes que toutes les actions soient finies la fenetre va se fermer automatiquement
