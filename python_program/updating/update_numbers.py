@@ -129,19 +129,19 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
             <meta name="description" content="A page about the coronavirus">
             <meta name="author" content="coronaReady">
             <meta charset="utf-8">
-            <link rel="stylesheet" href="/Users/bechara/Desktop/coronaReady/website/universal_css.css">
-            <link rel="stylesheet" href="/Users/bechara/Desktop/coronaReady/website/stats_page/stats_page.css">
+            <link rel="stylesheet" href="/Users/bechara/Desktop/github/coronaReady/website/universal_css.css">
+            <link rel="stylesheet" href="/Users/bechara/Desktop/github/coronaReady/website/stats_page/stats_page.css">
           </head>
           <body>
             <div class="header">
-              <img src="/Users/bechara/Desktop/coronaReady/python_program/images/corona_banner_720.png", alt="coronaReady logo">
-              <a href="/Users/bechara/Desktop/coronaReady/website/home_page/home_page.html"><button class="head_buttons", title="Go to Home page"><img src="/Users/bechara/Desktop/coronaReady/python_program/images/home_bttn.png", alt="Home button"></button></a>
-              <a href="/Users/bechara/Desktop/coronaReady/website/info_page/info_page.html"><button class="head_buttons", title="Go to Informations page"><img src="/Users/bechara/Desktop/coronaReady/python_program/images/info_bttn.png", alt="Info button"></button></a>
-              <a href="/Users/bechara/Desktop/coronaReady/website/articles_page/articles_page.html"><button class="head_buttons", title="Go to Articles page"><img src="/Users/bechara/Desktop/coronaReady/python_program/images/articles_bttn.png", alt="Articles button"></button></a>
-              <a href="/Users/bechara/Desktop/coronaReady/website/stats_page/stats_page.html"><button class="head_buttons head_buttons_active", title="Go to Statistics page"><img src="/Users/bechara/Desktop/coronaReady/python_program/images/stats_bttn.png", alt="Statistics button"></button></a>
-              <a href="/Users/bechara/Desktop/coronaReady/website/tips_page/tips_page.html"><button class="head_buttons", title="Go to Tips page"><img src="/Users/bechara/Desktop/coronaReady/python_program/images/tips_bttn.png", alt="Tips button"></button></a>
-              <a href="/Users/bechara/Desktop/coronaReady/website/sum_page/sum_page.html"><button class="head_buttons", title="Go to Daily Summary page"><img src="/Users/bechara/Desktop/coronaReady/python_program/images/sum_bttn.png", alt="Dailt Summary button"></button></a>
-              <a href="/Users/bechara/Desktop/coronaReady/website/quiz_page/quiz_page.html"><button class="head_buttons", title="Go to Quiz page"><img src="/Users/bechara/Desktop/coronaReady/python_program/images/quiz_bttn.png", alt="Quiz button"></button></a>
+              <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/corona_banner_720.png", alt="coronaReady logo">
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/home_page/home_page.html"><button class="head_buttons", title="Go to Home page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/home_bttn.png", alt="Home button"></button></a>
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/info_page/info_page.html"><button class="head_buttons", title="Go to Informations page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/info_bttn.png", alt="Info button"></button></a>
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/articles_page/articles_page.html"><button class="head_buttons", title="Go to Articles page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/articles_bttn.png", alt="Articles button"></button></a>
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/stats_page/stats_page.html"><button class="head_buttons head_buttons_active", title="Go to Statistics page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/stats_bttn.png", alt="Statistics button"></button></a>
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/tips_page/tips_page.html"><button class="head_buttons", title="Go to Tips page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/tips_bttn.png", alt="Tips button"></button></a>
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/sum_page/sum_page.html"><button class="head_buttons", title="Go to Daily Summary page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/sum_bttn.png", alt="Dailt Summary button"></button></a>
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/quiz_page/quiz_page.html"><button class="head_buttons", title="Go to Quiz page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/quiz_bttn.png", alt="Quiz button"></button></a>
             </div>
             <h1 class="page_title">COVID-19 Statistics</h1>
             <a href="https://www.worldometers.info/coronavirus/", target="_blank">
@@ -159,7 +159,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
               <p>Active: {self.lebanon_active}</p>
               <p>Recovered: {self.lebanon_reco}</p>
               <p>Deaths: {self.lebanon_deaths}</p>
-              <img src="/Users/bechara/Desktop/coronaReady/python_program/images/data_corona_plot_lebanon.png", alt="line plot">
+              <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/data_corona_plot_lebanon.png", alt="line plot">
             </div>
             <div class="cases">
               <h1>Iranian cases</h1>
@@ -167,7 +167,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
               <p>Active: {self.iran_active}</p>
               <p>Recovered: {self.iran_reco}</p>
               <p>Deaths: {self.iran_deaths}</p>
-              <img src="/Users/bechara/Desktop/coronaReady/python_program/images/data_corona_plot_iran.png", alt="line plot">
+              <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/data_corona_plot_iran.png", alt="line plot">
             </div>
             <div class="cases">
               <h1>Japanese cases</h1>
@@ -175,7 +175,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
               <p>Active: {self.japan_active}</p>
               <p>Recovered: {self.japan_reco}</p>
               <p>Deaths: {self.japan_deaths}</p>
-              <img src="/Users/bechara/Desktop/coronaReady/python_program/images/data_corona_plot_japan.png", alt="line plot">
+              <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/data_corona_plot_japan.png", alt="line plot">
             </div>
             <div class="updt">
               <p>Last update: {self.update_date}</p>
@@ -194,22 +194,22 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
             <meta name="description" content="A page about the coronavirus">
             <meta name="author" content="coronaReady">
             <meta charset="utf-8">
-            <link rel="stylesheet" href="/Users/bechara/Desktop/coronaReady/website/universal_css.css">
-            <link rel="stylesheet" href="/Users/bechara/Desktop/coronaReady/website/home_page/home_page.css">
+            <link rel="stylesheet" href="/Users/bechara/Desktop/github/coronaReady/website/universal_css.css">
+            <link rel="stylesheet" href="/Users/bechara/Desktop/github/coronaReady/website/home_page/home_page.css">
           </head>
           <body>
             <div class="header">
-              <img src="/Users/bechara/Desktop/coronaReady/python_program/images/corona_banner_720.png", alt="coronaReady logo">
-              <a href="/Users/bechara/Desktop/coronaReady/website/home_page/home_page.html"><button class="head_buttons head_buttons_active", title="Go to Home page"><img src="/Users/bechara/Desktop/coronaReady/python_program/images/home_bttn.png", alt="Home button"></button></a>
-              <a href="/Users/bechara/Desktop/coronaReady/website/info_page/info_page.html"><button class="head_buttons", title="Go to Informations page"><img src="/Users/bechara/Desktop/coronaReady/python_program/images/info_bttn.png", alt="Info button"></button></a>
-              <a href="/Users/bechara/Desktop/coronaReady/website/articles_page/articles_page.html"><button class="head_buttons", title="Go to Articles page"><img src="/Users/bechara/Desktop/coronaReady/python_program/images/articles_bttn.png", alt="Articles button"></button></a>
-              <a href="/Users/bechara/Desktop/coronaReady/website/stats_page/stats_page.html"><button class="head_buttons", title="Go to Statistics page"><img src="/Users/bechara/Desktop/coronaReady/python_program/images/stats_bttn.png", alt="Statistics button"></button></a>
-              <a href="/Users/bechara/Desktop/coronaReady/website/tips_page/tips_page.html"><button class="head_buttons", title="Go to Tips page"><img src="/Users/bechara/Desktop/coronaReady/python_program/images/tips_bttn.png", alt="Tips button"></button></a>
-              <a href="/Users/bechara/Desktop/coronaReady/website/sum_page/sum_page.html"><button class="head_buttons", title="Go to Daily Summary page"><img src="/Users/bechara/Desktop/coronaReady/python_program/images/sum_bttn.png", alt="Dailt Summary button"></button></a>
-              <a href="/Users/bechara/Desktop/coronaReady/website/quiz_page/quiz_page.html"><button class="head_buttons", title="Go to Quiz page"><img src="/Users/bechara/Desktop/coronaReady/python_program/images/quiz_bttn.png", alt="Quiz button"></button></a>
+              <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/corona_banner_720.png", alt="coronaReady logo">
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/home_page/home_page.html"><button class="head_buttons head_buttons_active", title="Go to Home page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/home_bttn.png", alt="Home button"></button></a>
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/info_page/info_page.html"><button class="head_buttons", title="Go to Informations page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/info_bttn.png", alt="Info button"></button></a>
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/articles_page/articles_page.html"><button class="head_buttons", title="Go to Articles page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/articles_bttn.png", alt="Articles button"></button></a>
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/stats_page/stats_page.html"><button class="head_buttons", title="Go to Statistics page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/stats_bttn.png", alt="Statistics button"></button></a>
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/tips_page/tips_page.html"><button class="head_buttons", title="Go to Tips page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/tips_bttn.png", alt="Tips button"></button></a>
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/sum_page/sum_page.html"><button class="head_buttons", title="Go to Daily Summary page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/sum_bttn.png", alt="Dailt Summary button"></button></a>
+              <a href="/Users/bechara/Desktop/github/coronaReady/website/quiz_page/quiz_page.html"><button class="head_buttons", title="Go to Quiz page"><img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/quiz_bttn.png", alt="Quiz button"></button></a>
             </div>
             <h1 class="page_title">Home</h1>
-            <a href="/Users/bechara/Desktop/coronaReady/website/info_page/info_page.html">
+            <a href="/Users/bechara/Desktop/github/coronaReady/website/info_page/info_page.html">
               <div class="info_preview">
                 <h1 class="info_title">Virus Information</h1>
                 <p class="info_text">
@@ -224,7 +224,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
                 </p>
               </div>
             </a>
-            <a href="/Users/bechara/Desktop/coronaReady/website/stats_page/stats_page.html">
+            <a href="/Users/bechara/Desktop/github/coronaReady/website/stats_page/stats_page.html">
               <div class="info_preview">
                 <h1 class="info_title">Statistics</h1>
                 <div class="stats_div">
@@ -243,22 +243,22 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
                 </div>
               </div>
             </a>
-            <a href="/Users/bechara/Desktop/coronaReady/website/articles_page/articles_page.html">
+            <a href="/Users/bechara/Desktop/github/coronaReady/website/articles_page/articles_page.html">
               <div class="info_preview">
                 <h1 class="info_title">Articles</h1>
                 <article class="article_quote">
-                  <img src="/Users/bechara/Desktop/coronaReady/python_program/images/web_seek_pic.jpeg", alt="article picture", class="article_pic">
+                  <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/web_seek_pic.jpeg", alt="article picture", class="article_pic">
                   <h1 class="article_title">Speakup Covid</h1>
                   <p class="article_text">"With reference to the ethical code of psychologists, this professional and experienced team will be offering psychological support to the frontline Health Caregivers dealing with the outbreak of Novel Coronavirus (COVID-19)."</p>
                 </article>
                 <article class="article_quote">
-                  <img src="/Users/bechara/Desktop/coronaReady/python_program/images/web_thae-pic.jpg", alt="article picture", class="article_pic">
+                  <img src="/Users/bechara/Desktop/github/coronaReady/python_program/images/web_thae-pic.jpg", alt="article picture", class="article_pic">
                   <h1 class="article_title">How The Pandemic Will End ~ The Atlantic</h1>
                   <p class="article_text">"Three months ago, no one knew that SARS-CoV-2 existed. Now the virus has spread to almost every country, infecting at least 446,000 people whom we know about, and many more whom we do not."</p>
                 </article>
               </div>
             </a>
-            <a href="/Users/bechara/Desktop/coronaReady/website/tips_page/tips_page.html">
+            <a href="/Users/bechara/Desktop/github/coronaReady/website/tips_page/tips_page.html">
               <div class="info_preview">
                 <h1 class="info_title">Tips</h1>
                 <p class="info_text"><ul class="info_list">
@@ -275,11 +275,11 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
         """
 
         #on ouvre le fichier HTML, on ecrit le nouveau code avec les nouvelles valeurs et puis on le ferme
-        self.stat_code=open("/Users/bechara/Desktop/coronaReady/website/stats_page/stats_page.html", "w")
+        self.stat_code=open("/Users/bechara/Desktop/github/coronaReady/website/stats_page/stats_page.html", "w")
         self.stat_code.write(self.html_stat_code)
         self.stat_code.close()
         #on ouvre le fichier HTML, on ecrit le nouveau code avec les nouvelles valeurs et puis on le ferme
-        self.home_code=open("/Users/bechara/Desktop/coronaReady/website/home_page/home_page.html","w")
+        self.home_code=open("/Users/bechara/Desktop/github/coronaReady/website/home_page/home_page.html","w")
         self.home_code.write(self.html_home_code)
         self.home_code.close()
         self.after(4000, self.destroy)  #apres 4 secondes que toutes les actions soient finies la fenetre va se fermer automatiquement

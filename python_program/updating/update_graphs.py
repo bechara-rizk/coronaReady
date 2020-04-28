@@ -10,10 +10,10 @@ class Graph():  #on definit le nom de la methode qu'on veut creer
         self.country_file=self.country_file.drop(columns=["Lat", "Long", "Province/State"])  #on efface les cases non voulues dans les nombres restants
         self.country_file=melt(self.country_file, id_vars=["Country/Region"])  #on echange le format des donnee de large en long
         self.country_file=self.country_file.value.values  #on garde uniquement les cases dans la colone value et on efface tout le reste
-        self.file=open(f"/Users/bechara/Desktop/coronaReady/python_program/data/data_corona_{country}.csv", "w")  #on ouvre un fichier specifique au pays entre par l'utilisateur en mode ecriture, si le fichier n'existeait pas il sera creer et s'il existait les donnees qu'il contenait seront ecrasees
+        self.file=open(f"/Users/bechara/Desktop/github/coronaReady/python_program/data/data_corona_{country}.csv", "w")  #on ouvre un fichier specifique au pays entre par l'utilisateur en mode ecriture, si le fichier n'existeait pas il sera creer et s'il existait les donnees qu'il contenait seront ecrasees
         self.file.write(str(self.country_file))  #on ecrit le contenu de la variable dans le fichier ouvert
         self.file.close()  #on sauvegarde le fichier et on le ferme
-        self.file=open(f"/Users/bechara/Desktop/coronaReady/python_program/data/data_corona_{country}.csv", "r")  #on reouvre le meme fichier mais cette fois en mode lecture
+        self.file=open(f"/Users/bechara/Desktop/github/coronaReady/python_program/data/data_corona_{country}.csv", "r")  #on reouvre le meme fichier mais cette fois en mode lecture
         self.data=[]  #on defnit le nom d'un tableau
         self.data=self.file.read()  #et on met le contenu du fichier qu'on vient d'ouvrir dans le tableau qu'on a definit
         self.file.close()  #on ferme le fichier apres en avoir finit
@@ -30,7 +30,7 @@ class Graph():  #on definit le nom de la methode qu'on veut creer
         plt.plot(self.data, color="#ff0000")  #on cree un graphique avec la couleur de la ligne en rouge
         plt.xlabel("days since 22/01/2020")  #on definit le nom de l'axe des abscisses
         plt.ylabel("Total cases")  #on definit le nom de l'axe des ordonnees
-        plt.savefig(f"/Users/bechara/Desktop/coronaReady/python_program/images/data_corona_plot_{country}.png", bbox_inches="tight")  #on sauvegarde le graphique creer en image avec un nom specifique pour chaque pays et on enleve les bordures du tableau
+        plt.savefig(f"/Users/bechara/Desktop/github/coronaReady/python_program/images/data_corona_plot_{country}.png", bbox_inches="tight")  #on sauvegarde le graphique creer en image avec un nom specifique pour chaque pays et on enleve les bordures du tableau
         plt.clf()  #on remet le graphique a zero (vide)
 
 if __name__=="__main__":  #si ce code est execute directement (s'il n'est pas importe en tant que librairie)
