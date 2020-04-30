@@ -151,7 +151,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
         <p>Total: {self.world_total}</p>
         <p>Active: {self.world_active}</p>
         <p>Recovered: {self.world_reco}</p>
-        <p>Deaths: {self.world_active}</p>
+        <p>Deaths: {self.world_deaths}</p>
       </div>
     </a>
     <div class="cases">
@@ -159,7 +159,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
       <p>Total: {self.lebanon_total}</p>
       <p>Active: {self.lebanon_active}</p>
       <p>Recovered: {self.lebanon_reco}</p>
-      <p>Deaths: {self.lebanon_active}</p>
+      <p>Deaths: {self.lebanon_deaths}</p>
       <img src="python_program/images/data_corona_plot_Lebanon.png", alt="line plot">
     </div>
     <div class="cases">
@@ -167,7 +167,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
       <p>Total: {self.iran_total}</p>
       <p>Active: {self.iran_active}</p>
       <p>Recovered: {self.iran_reco}</p>
-      <p>Deaths: {self.iran_active}</p>
+      <p>Deaths: {self.iran_deaths}</p>
       <img src="python_program/images/data_corona_plot_Iran.png", alt="line plot">
     </div>
     <div class="cases">
@@ -175,7 +175,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
       <p>Total: {self.japan_total}</p>
       <p>Active: {self.japan_active}</p>
       <p>Recovered: {self.japan_reco}</p>
-      <p>Deaths: {self.japan_active}</p>
+      <p>Deaths: {self.japan_deaths}</p>
       <img src="python_program/images/data_corona_plot_Japan.png", alt="line plot">
     </div>
     <div class="updt">
