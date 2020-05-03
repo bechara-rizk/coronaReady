@@ -119,8 +119,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
         self.title_label["bg"]="#ff0000"  #on modifie le font du texte qu'on va ajouter pour qu'il soit rouge
 
         #on definit une variable qui contient le code HTML avec les nouvelles valeurs entrees par l'utilisateur
-        self.html_stat_code=f"""
-<!DOCTYPE html>
+        self.html_stat_code=f"""<!DOCTYPE html>
 
 <html lang="en" dir="ltr">
   <head>
@@ -185,8 +184,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
 </html>
 """
         #on definit une variable qui contient le code HTML avec les nouvelles valeurs entrees par l'utilisateur
-        self.html_home_code=f"""
-<!DOCTYPE html>
+        self.html_home_code=f"""<!DOCTYPE html>
 
 <html lang="en" dir="ltr">
   <head>
