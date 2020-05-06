@@ -181,8 +181,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
       <p>Last update: {self.update_date}</p>
     </div>
   </body>
-</html>
-"""
+</html>"""
         #on definit une variable qui contient le code HTML avec les nouvelles valeurs entrees par l'utilisateur
         self.html_home_code=f"""<!DOCTYPE html>
 
@@ -271,9 +270,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
       </div>
     </a>
   </body>
-</html>
-
-        """
+</html>"""
 
         #on ouvre le fichier HTML, on ecrit le nouveau code avec les nouvelles valeurs et puis on le ferme
         self.stat_code=open("/Users/bechara/Desktop/github/coronaReady/stats_page.html", "w")
