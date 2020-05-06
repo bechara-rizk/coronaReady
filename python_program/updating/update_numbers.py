@@ -10,7 +10,7 @@ class NewNumbers(Tk):  #on definit le nom de la methode qu'on veut creer et elle
         webopen("https://www.worldometers.info/coronavirus/")  #on ouvre une fenetre dans un moteur de recherche qui va nous montrer la page du lien
         self.title_label=Label(text="Enter The Numbers To Update The\nStatistics Page", font=("Arial, Helvetica, sans-serif", 20), fg="#000000", bg="#cfcfcf")  #on defini un champ de texte (ou etiquette) qui va montrer du texte
         self.title_label.grid(row=0, column=0, columnspan=2)  #on place l'etiquette qu'on vient de definir dans une fentre
-
+        
         self.world_total_label=Label(text="World Total Cases: ", font=("Arial, Helvetica, sans-serif", 15), fg="#000000", bg="#cfcfcf")  #on defini un champ de texte (ou etiquette) qui va montrer du texte
         self.world_total_label.grid(row=1, column=0, sticky="w")  #on place l'etiquette qu'on vient de definir dans la fentre
         self.world_total_entry=Entry()  #on definit un champ de texte ou l'utilisateur peut ajouter des valeurs
