@@ -39,7 +39,7 @@ class Application(Tk):  #on definit le nom de la methode qu'on veut creer et ell
         self.sum_bttn.grid(row=0, column=6)  #on place le bouton dans la fenetre
         self.quiz_bttn.grid(row=0, column=7)  #on place le bouton dans la fenetre
 
-        self.main_frame = Frame(bg="Blue")  #on definit un cadre qui aura la couleur bleue
+        self.main_frame = Frame(bg="#0000ff")  #on definit un cadre qui aura la couleur bleue
         self.main_frame.grid(row = 1, column=0, columnspan = 8, sticky = "news")  #on place le cadre
         Grid.rowconfigure(self, 1, weight = 1)  #on modifie les parametres de l'emplacement du cadre
 
