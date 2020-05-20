@@ -66,7 +66,8 @@ let questions = [
 //on declare de nouvelles variables
 const lastQuestion = questions.length - 1;  //on definit l'esmplacement (index) de la derniere question dans le tableau
 let runningQuestion = 0;  //la question actuelle
-let count = 0;  //le temps de chaque question commence a zero
+let count = -1;  //le temps de chaque question commence a zero
+let count2 = 10; 
 const questionTime = 10;  //et se termine a 10 secondes
 const gaugeWidth = 150;  //la largeur en pixels de la barre du temps
 const gaugeUnit = gaugeWidth / questionTime;  //combie de la barre sera remplie a chaque seconde
@@ -92,7 +93,7 @@ function startQuiz(){
     quiz.style.display = "block";  //on montre l'element qui contient la question
     renderProgress();  //on appele la fonction qui va ajouter des cercles pour le nombre de questions
     renderCounter();  //on appele la fonction qui s'occupe du temps de chaque question
-    TIMER = setInterval(renderCounter,1000); //chaque seconde on va appeler la fonction qui s'occupe du temps de chaque question
+    TIMER = setInterval(renderCounter2,1000); //chaque seconde on va appeler la fonction qui s'occupe du temps de chaque question
 }
 
 //on definit une fonction qui va ajouter les cercles en bas a droite du conteneur pour montrer a l'utilisateur ou il en est
@@ -102,10 +103,11 @@ function renderProgress(){
     }
 }
 
+//function has been changed to renderCounter2
 //on definit une fonction qui va s'occuper du temps de chaque question
 function renderCounter(){
     if(count <= questionTime){  //si le temps utilise est plus petit ou egal au temps maximal
-        counter.innerHTML = count;  //changer le nombre du temps dans le code html
+        counter.innerHTML = count2;  //changer le nombre du temps dans le code html
         timeGauge.style.width = count * gaugeUnit + "px";  //et la portion utilisee de la barre
         count++  //et ajouter 1 (ou une seconde) au temps utilise
     }else{  //si la condition precedente n'est pas satisfaite et donc l'utilisateur n'a pas repondu a temps
@@ -115,6 +117,28 @@ function renderCounter(){
             runningQuestion++;  //ajouter 1 a la question actuelle
             renderQuestion();  //on appele la fonction qui va montrer une question avec son image et les choix possibles
         }else{  //si la condition precedente n'est pas satisfaite alors c'est la derniere question
+            clearInterval(TIMER);  //on va arreter le temps contenu dans cette variable
+            scoreRender();  //on appele la fonction qui va montrer le score final
+        }
+    }
+}
+
+function renderCounter2(){
+    if (count2>0){
+        counter.innerHTML=count2;
+        timeGauge.style.width = count * gaugeUnit + "px";
+        count++
+        count2--
+    }else{
+        counter.innerHTML = count2;
+        timeGauge.style.width = count * gaugeUnit + "px";
+        count2=10;
+        count=0;
+        answerIsWrong();
+        if (runningQuestion < lastQuestion) {  //si la question actuelle n'est pas la derniere
+            runningQuestion++;  //ajouter 1 a la question actuelle
+            renderQuestion();  //on appele la fonction qui va montrer une question avec son image et les choix possibles
+        } else {  //si la condition precedente n'est pas satisfaite alors c'est la derniere question
             clearInterval(TIMER);  //on va arreter le temps contenu dans cette variable
             scoreRender();  //on appele la fonction qui va montrer le score final
         }

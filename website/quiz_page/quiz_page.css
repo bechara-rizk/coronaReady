@@ -59,7 +59,7 @@
   padding : 10px
 }
 .choice{
-  display: inline-block;
+  display: inline-flex;
   width : 135px;
   text-align: center;
   border : 1px solid #808080;
@@ -67,6 +67,9 @@
   cursor: pointer;
   padding : 5px;
   font-size: 20px;
+  height: 135px;
+  justify-content: center;
+  flex: 0 0 120px;
 }
 .choice:hover{
   border : 2px solid #808080;
